@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Voice Command Shopping Assistant</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Voice Command Shopping Assistant</h1>
+      <p class="tiny">Use voice or type commands — try: "Add 2 apples" / "Remove milk" / "Find organic apples"</p>
+    </header>
+
+    <section class="controls">
+      <label for="lang">Language:</label>
+      <select id="lang">
+        <option value="en-US">English (US)</option>
+        <option value="hi-IN">Hindi (India)</option>
+        <option value="es-ES">Spanish</option>
+      </select>
+
+      <button id="mic-btn" aria-pressed="false">🎤 Start</button>
+      <span id="status">Idle</span>
+    </section>
+
+    <section class="visual">
+      <div id="transcript" class="transcript">Recognized text will appear here</div>
+    </section>
+
+    <section class="manual">
+      <input id="manual-input" placeholder='Try: "Add milk" or "Add 3 oranges"' />
+      <button id="manual-add-btn">Add</button>
+    </section>
+
+    <section class="suggestions">
+      <h2>Smart suggestions</h2>
+      <ul id="suggest-list"></ul>
+    </section>
+
+    <section class="list">
+      <h2>Shopping list</h2>
+      <ul id="shopping-list"></ul>
+      <div class="list-controls">
+        <button id="clear-btn">Clear list</button>
+        <button id="export-btn">Export CSV</button>
+      </div>
+    </section>
+
+    <footer class="tiny">Works best in Chrome/Edge. Requires HTTPS on deployed site.</footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

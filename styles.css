@@ -1,0 +1,22 @@
+:root{
+  --bg:#f5f7fb; --card:#ffffff; --accent:#2b7cff; --muted:#666;
+}
+*{box-sizing:border-box}
+body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial; margin:0; background:var(--bg); color:#111}
+.app{max-width:760px;margin:28px auto;padding:18px}
+header h1{margin:0 0 6px;font-size:20px}
+.tiny{color:var(--muted);font-size:13px;margin:6px 0}
+.controls{display:flex;gap:10px;align-items:center;margin:12px 0}
+.controls select, .manual input{padding:8px;border-radius:6px;border:1px solid #ddd}
+#mic-btn{padding:8px 12px;border-radius:8px;border:none;background:var(--accent);color:white;cursor:pointer}
+#mic-btn.listening{background:#ff6b6b}
+.status{margin-left:6px;color:var(--muted)}
+.transcript{padding:10px;background:var(--card);border-radius:8px;border:1px solid #eee;min-height:44px;margin:10px 0}
+.manual{display:flex;gap:8px;margin-bottom:10px}
+.manual input{flex:1}
+.suggestions, .list{background:var(--card);padding:12px;border-radius:8px;border:1px solid #eee;margin:10px 0}
+ul{list-style:none;padding:0;margin:0}
+li.item{display:flex;justify-content:space-between;align-items:center;padding:8px 6px;border-bottom:1px dashed #f0f0f0}
+.item .meta{font-size:13px;color:var(--muted)}
+.list-controls{display:flex;gap:8px;margin-top:10px}
+button{cursor:pointer}
