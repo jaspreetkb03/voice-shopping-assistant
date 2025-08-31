@@ -1,0 +1,60 @@
+/* index.css - plain CSS version */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  color: black;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 16px;
+  background: white;
+}
+
+header {
+  background: #4f46e5; /* Indigo-like color */
+  color: white;
+  padding: 12px;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 16px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+button:disabled {
+  background: #999;
+}
+
+.list {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  background: #f0f0f0;
+  margin: 8px 0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
